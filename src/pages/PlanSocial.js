@@ -28,7 +28,7 @@ const PlanSocial = () => {
 
         setLoading(true);
         try {
-            const response = await axios.post("http://localhost:5000/api/schedule/generate-dates", requestData);
+            const response = await axios.post("https://cheeers-backend-1.onrender.com/api/schedule/generate-dates", requestData);
 
             console.log("✅ API Response:", response.data);
 
@@ -67,7 +67,7 @@ const PlanSocial = () => {
         };
     
         try {
-            const response = await axios.post("http://localhost:5000/api/schedule/book", requestData);
+            const response = await axios.post("https://cheeers-backend-1.onrender.com/api/schedule/book", requestData);
         
             console.log("✅ API Response:", response.data);
         

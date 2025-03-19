@@ -10,7 +10,7 @@ const Matches = () => {
     // ✅ Fetch Matches from Backend
     const fetchMatches = async () => {
         try {
-            const response = await axios.get("http://localhost:5000/api/schedule/matches");
+            const response = await axios.get("https://cheeers-backend-1.onrender.com/api/schedule/matches");
             setMatches(response.data);
         } catch (error) {
             console.error("❌ Error fetching matches:", error);

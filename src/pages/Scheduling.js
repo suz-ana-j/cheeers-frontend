@@ -13,7 +13,7 @@ const Scheduling = () => {
         console.log("📡 Fetching all scheduled socials...");
         setLoading(true);
         try {
-            const response = await axios.get("http://localhost:5000/api/schedule/upcoming");
+            const response = await axios.get("https://cheeers-backend-1.onrender.com/api/schedule/upcoming");
             console.log("✅ Scheduled socials received:", response.data);
 
             // ✅ Find common dates between all users
@@ -44,7 +44,7 @@ const Scheduling = () => {
         console.log("📆 Choosing final date:", date);
         setLoading(true);
         try {
-            await axios.put(`http://localhost:5000/api/schedule/confirm-date/${selectedSchedule.id}`, { confirmedDate: date });
+            await axios.put(`https://cheeers-backend-1.onrender.com/api/schedule/confirm-date/${selectedSchedule.id}`, { confirmedDate: date });
             setNotification("✅ Final date confirmed!");
             fetchSchedules(); // Refresh schedules after selecting the final date
             setSelectedSchedule(null);

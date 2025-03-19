@@ -16,7 +16,7 @@ const Login = () => {
         console.log(`Attempting ${endpoint} with email:`, email); // ✅ Debugging
 
         try {
-            const response = await axios.post(`http://localhost:5000/api/auth/${endpoint}`, {
+            const response = await axios.post(`https://cheeers-backend-1.onrender.com/api/auth/${endpoint}`, {
                 email,
                 password,
             });

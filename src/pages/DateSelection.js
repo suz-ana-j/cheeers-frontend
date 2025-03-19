@@ -24,7 +24,7 @@ const DateSelection = () => {
 
         setLoading(true);
         try {
-            const response = await axios.post("http://localhost:5000/api/schedule/generate-dates", {
+            const response = await axios.post("https://cheeers-backend-1.onrender.com/api/schedule/generate-dates", {
                 scheduleId: parseInt(scheduleId, 10) // ✅ Ensure scheduleId is an integer
             });
 
@@ -68,7 +68,7 @@ const DateSelection = () => {
         console.log("✅ Confirming selected dates:", selectedDates);
         setLoading(true);
         try {
-            await axios.put(`http://localhost:5000/api/schedule/confirm-dates/${scheduleId}`, { selectedDates });
+            await axios.put(`https://cheeers-backend-1.onrender.com/api/schedule/confirm-dates/${scheduleId}`, { selectedDates });
             setNotification("✅ Meeting scheduled! Awaiting confirmation.");
             console.log("🔄 Redirecting to scheduling page...");
             navigate("/scheduling"); // Redirect to scheduling page

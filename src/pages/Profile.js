@@ -20,7 +20,7 @@ const Profile = () => {
     useEffect(() => {
         const fetchProfile = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/api/schedule/profile/1"); // Replace `1` with dynamic user ID
+                const response = await axios.get("https://cheeers-backend-1.onrender.com/api/schedule/profile/1"); // Replace `1` with dynamic user ID
                 setProfile(response.data);
                 setLoading(false);
             } catch (error) {
@@ -40,7 +40,7 @@ const Profile = () => {
     // ✅ Update Profile
     const handleUpdateProfile = async () => {
         try {
-            await axios.put(`http://localhost:5000/api/schedule/profile/update/${profile.id}`, profile);
+            await axios.put(`https://cheeers-backend-1.onrender.com/api/schedule/profile/update/${profile.id}`, profile);
             setNotification("✅ Profile updated successfully!");
         } catch (error) {
             console.error("❌ Error updating profile:", error);
@@ -51,7 +51,7 @@ const Profile = () => {
     // ✅ Validate Profile (For Instagram)
     const handleValidateProfile = async () => {
         try {
-            await axios.put(`http://localhost:5000/api/schedule/profile/validate/${profile.id}`);
+            await axios.put(`https://cheeers-backend-1.onrender.com/api/schedule/profile/validate/${profile.id}`);
             setProfile({ ...profile, validated: true });
             setNotification("✅ Profile validated for Instagram!");
         } catch (error) {
