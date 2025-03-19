@@ -1,0 +1,104 @@
+.scheduling-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #ff7b54;
+}
+
+/* ✅ List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #fff3e0;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+li:hover {
+    background: #ffdcc5;
+}
+
+/* ✅ Button Styling */
+button {
+    background-color: #ff7b54;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff5733;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* ✅ Reschedule Modal */
+.reschedule-modal {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.reschedule-modal ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* ✅ Date Selection Styling */
+.reschedule-modal li {
+    background: #ffa07a;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reschedule-modal li:hover {
+    background: #ff7b54;
+}
+
+.reschedule-modal li.selected {
+    background: #ff4500;
+    color: white;
+    font-weight: bold;
+}
+
+/* ✅ Notification Banner */
+.notification {
+    background: #ffcc00;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,62 @@
+.plan-social-container {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.date-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.date-btn {
+    background-color: #ffd700;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.date-btn.selected {
+    background-color: #ffa500;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.submit-btn, .generate-btn, .cancel-btn {
+    background-color: #ff7b54;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+}
+
+.generate-btn {
+    background-color: #ffb347;
+}
+
+.submit-btn:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.cancel-btn {
+    background-color: #ff5733;
+}
+
